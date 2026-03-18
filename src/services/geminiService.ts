@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type, Modality } from "@google/genai";
 
 const ai = new GoogleGenAI({
-  apiKey: process.env.VITE_GEMINI_API_KEY
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY
 });
 export interface WordDetails {
   word: string;
